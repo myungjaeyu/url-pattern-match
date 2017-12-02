@@ -1,0 +1,25 @@
+{
+  "name": "url-match",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/u4bi/url-pattern-match.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/u4bi/url-pattern-match/issues"
+  },
+  "homepage": "https://github.com/u4bi/url-pattern-match#readme",
+  "devDependencies": {
+    "rollup": "^0.52.0",
+    "rollup-plugin-uglify-es": "0.0.1"
+  }
+}
