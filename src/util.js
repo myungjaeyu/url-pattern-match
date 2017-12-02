@@ -1,5 +1,5 @@
 export var patternEscape = (pattern) => pattern.replace(/[\?\&\.]/g, '\\$&');
-export var expression = (pattern) => new RegExp(`^${ pattern.replace(/\:[^\/\&\.\?]+/g, '([^\/]+)') }$`);
+export var expression = (pattern) => new RegExp(`^${ pattern.replace(/\:[^\/\&\.\?]+/g, '([^\/]+)').replace(/\)\?/, ')\\?') }$`);
 
 export var getKeys = (pattern) => {
     try {

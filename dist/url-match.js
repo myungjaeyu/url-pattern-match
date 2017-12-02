@@ -5,7 +5,7 @@
 }(this, (function () { 'use strict';
 
 var patternEscape = (pattern) => pattern.replace(/[\?\&\.]/g, '\\$&');
-var expression = (pattern) => new RegExp(`^${ pattern.replace(/\:[^\/\&\.\?]+/g, '([^\/]+)') }$`);
+var expression = (pattern) => new RegExp(`^${ pattern.replace(/\:[^\/\&\.\?]+/g, '([^\/]+)').replace(/\)\?/, ')\\?') }$`);
 
 var getKeys = (pattern) => {
     try {
