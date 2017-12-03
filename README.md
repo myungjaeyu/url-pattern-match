@@ -1,19 +1,25 @@
 # url-pattern-match
 
-Super simple URL match patterns library.
+[![NPM Version](https://img.shields.io/npm/v/url-pattern-match.svg)](https://www.npmjs.com/package/url-pattern-match)
+
+> Super simple URL match patterns library.
 
 ## Install
+
+```bash
+$ npm install --save url-pattern-match
+```
 
 nodejs
 
 ```javascript
-const match = require('url-match.min');
+const match = require('url-pattern-match');
 ```
 
 browsers
 
 ```html
-<script src="url-match.min.js"></script>
+<script src="url-pattern-match.min.js"></script>
 ```
 
 ## Usage

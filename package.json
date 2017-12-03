@@ -1,8 +1,8 @@
 {
-  "name": "url-match",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "url-pattern-match",
+  "version": "1.0.4",
+  "description": "Super simple URL match patterns library",
+  "main": "dist/url-pattern-match.min.js",
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -c -w",
@@ -12,9 +12,17 @@
     "type": "git",
     "url": "git+https://github.com/u4bi/url-pattern-match.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "url-pattern",
+    "url-match",
+    "simple-url",
+    "pattern-match",
+    "match",
+    "pattern",
+    "url"
+  ],
+  "author": "Myungjae Yu",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/u4bi/url-pattern-match/issues"
   },

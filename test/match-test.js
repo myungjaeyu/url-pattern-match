@@ -1,5 +1,5 @@
 const test = require('ava');
-const match = require('../dist/url-match.min');
+const match = require('../dist/url-pattern-match.min');
 
 test('exam', t => {
     const exam = match('/settings/:type', '/settings/profile');

@@ -1,4 +1,4 @@
-const match = require('../dist/url-match.min');
+const match = require('../dist/url-pattern-match.min');
 
 console.log(match('https://github.com/:name', 'https://github.com/u4bi'));
 
