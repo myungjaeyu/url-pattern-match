@@ -39,6 +39,8 @@ test('exam6', t => {
 
 test('exam7', t => {
     const exam = match('/?name=:NAME&level=:LEVEL&weapon=:WEAPON', '/?name=u4bi&level=17&weapon=ak-47');
+    
+    console.log(exam);
 
     t.true(exam.state);
 });

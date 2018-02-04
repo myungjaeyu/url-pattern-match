@@ -1,12 +1,12 @@
 {
   "name": "url-pattern-match",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Super simple URL match patterns library",
   "main": "dist/url-pattern-match.min.js",
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -c -w",
-    "test" : "ava test -v"
+    "test": "ava test -v"
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,7 @@
   "homepage": "https://github.com/u4bi/url-pattern-match#readme",
   "devDependencies": {
     "ava": "^0.24.0",
-    "rollup": "^0.52.0",
+    "rollup": "^0.55.3",
     "rollup-plugin-uglify-es": "0.0.1"
   }
 }

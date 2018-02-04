@@ -11,6 +11,6 @@ export var getKeys = (pattern) => {
 
 export var getMatch = (url, keys, regex) => url.match(regex);
 
-export var isMatch = (state, children = {} ) => {
-    return { state : state, children : children };
+export var isMatch = (state, pattern, children = {} ) => {
+    return { state : state, pattern : pattern, children : children };
 };

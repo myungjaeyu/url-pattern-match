@@ -25,19 +25,24 @@ browsers
 ## Usage
 
 ```javascript
-var exam  = match('/settings/:type', '/settings/profile');
-var exam1 = match('/settings/:type', '/settings/admin');
+var exam  = match('http://example.com/settings/:type', 'http://example.com/settings/profile');
+var exam1 = match('http://example.com/settings/:type', 'http://example.com/settings/admin');
 
-var exam2 = match('/users/:name/:type', '/users/u4bi/repos');
-var exam3 = match('/users/:name/:type', '/users/u4bi/orgs');
+var exam2 = match('http://example.com/users/:name/:type', 'http://example.com/users/u4bi/repos');
+var exam3 = match('http://example.com/users/:name/:type', 'http://example.com/users/u4bi/orgs');
 
-var exam4 = match('/:name?tab=:panel', '/u4bi?tab=stars');
-var exam5 = match('/:name/?tab=:panel', '/u4bi/?tab=stars');
+var exam4 = match('http://example.com/:name?tab=:panel', 'http://example.com/u4bi?tab=stars');
+var exam5 = match('http://example.com/:name/?tab=:panel', 'http://example.com/u4bi/?tab=stars');
 
-var exam6 = match('/?name=:NAME&level=:LEVEL&weapon=:WEAPON', '/?name=u4bi&level=17&weapon=ak-47');
+var exam6 = match(
+    'http://example.com/?name=:NAME&level=:LEVEL&weapon=:WEAPON',
+    'http://example.com/?name=u4bi&level=17&weapon=ak-47'
+);
+
 
 {
     state: true,
+    pattern : 'http://example.com/?name=:NAME&level=:LEVEL&weapon=:WEAPON',
     children:{ 
         NAME   : 'u4bi', 
         LEVEL  : '17', 
@@ -46,6 +51,17 @@ var exam6 = match('/?name=:NAME&level=:LEVEL&weapon=:WEAPON', '/?name=u4bi&level
 }
 
 var exam7 = match('https://:SUB_DOMAIN.github.com', 'https://api.github.com');
+
+
+  ✔ exam
+  ✔ exam2
+  ✔ exam3
+  ✔ exam4
+  ✔ exam5
+  ✔ exam6
+  ✔ exam7
+
+  7 tests passed
 ```
 
 ## License
