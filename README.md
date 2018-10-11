@@ -2,6 +2,8 @@
 
 [![NPM Version](https://img.shields.io/npm/v/url-pattern-match.svg)](https://www.npmjs.com/package/url-pattern-match)
 
+[![NPM Badge](https://nodei.co/npm/url-pattern-match.png?downloads=true)](https://www.npmjs.com/package/url-pattern-match)
+
 > Super simple URL match patterns library.
 
 ## Install
