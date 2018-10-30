@@ -73,6 +73,30 @@ test('exam8', t => {
     t.is(exam.children.SUB_DOMAIN, 'api');
 });
 
+test('not_matched_with_longer_path', t => {
+    const exam = match('http://example.com/users/:name', 'http://example.com/users/u4bi/repos');
+
+    t.false(exam.state);
+})
+
+test('not_matched_with_shorter_path', t => {
+    const exam = match('http://example.com/settings/:type', 'http://example.com/settings');
+
+    t.false(exam.state);
+})
+
+test('not_matched_with_different_domain', t => {
+    const exam = match('http://example.com/settings/:type', 'http://example.org/settings/profile');
+
+    t.false(exam.state);
+})
+
+test('not_matched_with_partially_matching_url', t => {
+    const exam = match('http://example.com/users/:name/:type', 'http://example.com/users/u4bi');
+
+    t.false(exam.state);
+})
+
 /*
   
   ✔ exam
@@ -83,7 +107,11 @@ test('exam8', t => {
   ✔ exam6
   ✔ exam7
   ✔ exam8
+  ✔ not_matched_with_longer_path
+  ✔ not_matched_with_shorter_path
+  ✔ not_matched_with_different_domain
+  ✔ not_matched_with_partially_matching_url
 
-  8 tests passed
+  12 tests passed
 
 */

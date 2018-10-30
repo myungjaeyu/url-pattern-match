@@ -62,8 +62,13 @@ var exam7 = match('https://:SUB_DOMAIN.github.com', 'https://api.github.com');
   ✔ exam5
   ✔ exam6
   ✔ exam7
+  ✔ exam8
+  ✔ not_matched_with_longer_path
+  ✔ not_matched_with_shorter_path
+  ✔ not_matched_with_different_domain
+  ✔ not_matched_with_partially_matching_url
 
-  7 tests passed
+  12 tests passed
 ```
 
 ## License
